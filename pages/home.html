@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Home</title>
+  <script src="../engine/js/standalone-bridge.js" data-spa-ignore></script>
+  <!-- 웹 단독 사용 시 전역 CSS를 넣고 싶다면 아래와 같이 사용 (SPA 주입 시 무시하려면 data-spa-ignore 추가)-->
+  <!-- <link rel="stylesheet" href="../engine/css/base.css" data-spa-ignore /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" data-spa-ignore >
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css' data-spa-ignore>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css' data-spa-ignore>
+  <link rel="stylesheet" href="../engine/css/base.css" data-spa-ignore>
+  <link rel="stylesheet" href="../engine/css/styleGuide.css" data-spa-ignore>
+  <link rel="stylesheet" href="../engine/css/component.css" data-spa-ignore>
+  <link rel="stylesheet" href="../engine/css/popup.css">
+  <meta name="popup:auto-url" content="popups/popuptest.html">
+</head>
+<body>
+
+<div data-include="components/header.html" data-include-when="web"></div>
+
+<div class="home-page">
+
+  
+<div style="padding:10px;">
+  <h1>블로그 메뉴</h1>
+  <p>하이브리드 템플릿 엔진으로 동작 중.</p>
+  <a href="pages/posts.html">글 목록으로</a>
+  <a href="pages/community.html?page=123">커뮤니티로</a>
+  <a href="pages/board/list.html">게시판 목록으로</a>
+  <a href="pages/board/view.html">게시판 상세로</a>
+  <a href="pages/board/test.html">게시판 테스트로</a>
+  <a href="#" data-open-offcanvas="left">왼쪽 메뉴</a>
+  <button class="open-offcanvas-right">오른쪽 열기</button>
+
+  <a class="popup" href="popups/popuptest.html"
+  data-popup-auto="once" data-popup-delay="300">1</a>
+  <a href="popups/popuptest.html" class="popup" data-popup-style="sheet" data-popup-delay="300">열기</a>
+  <a href="popups/popuptest.html" class="popup" data-popup-style="modal" data-popup-size="md" data-popup-title="Terms">팝업열기</a>
+</div>
+
+<div class="posts-container">
+  <div class="section-header">
+    <div class="frame"><div class="section-title">추천글</div></div>
+    <div class="action-button"><div class="parent-title">모두 보기</div></div>
+  </div>
+  <div class="posts-list">
+    <div class="blog-post-list">
+      <div class="image"></div>
+      <div class="container">
+        <div class="div">
+          <div class="badge"><div class="text-wrapper">취미</div></div>
+          <p><a href="pages/board/view.html" class="title">5G 네트워크로 연결된 스마트 팩토리,생산성과 효율성 급증</a></p>
+        </div>
+        <div class="meta-info">
+          <div class="author">Andy Waruwu</div>
+          <div class="timestamp">2m ago</div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-post-list-2">
+      <div class="image"></div>
+      <div class="container">
+        <div class="div">
+          <div class="badge"><div class="text-wrapper">사회/정치</div></div>
+          <p class="title">양자 컴퓨팅의 상용화,문제 해결 속도 지수적으로 증가</p>
+        </div>
+        <div class="meta-info">
+          <div class="author">Bella Kim</div>
+          <div class="timestamp">1h ago</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="posts-container">
+  <div class="section-header">
+    <div class="frame"><div class="section-title">추천글</div></div>
+    <div class="action-button"><div class="parent-title">모두 보기</div></div>
+  </div>
+  <div class="posts-list">
+    <div class="blog-post-list">
+      <div class="image"></div>
+      <div class="container">
+        <div class="div">
+          <div class="badge"><div class="text-wrapper">취미</div></div>
+          <p class="title">5G 네트워크로 연결된 스마트 팩토리,생산성과 효율성 급증</p>
+        </div>
+        <div class="meta-info">
+          <div class="author">Andy Waruwu</div>
+          <div class="timestamp">2m ago</div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-post-list-2">
+      <div class="image"></div>
+      <div class="container">
+        <div class="div">
+          <div class="badge"><div class="text-wrapper">사회/정치</div></div>
+          <p class="title">양자 컴퓨팅의 상용화,문제 해결 속도 지수적으로 증가</p>
+        </div>
+        <div class="meta-info">
+          <div class="author">Bella Kim</div>
+          <div class="timestamp">1h ago</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="posts-container">
+  <div class="section-header">
+    <div class="frame"><div class="section-title">추천글</div></div>
+    <div class="action-button"><div class="parent-title">모두 보기</div></div>
+  </div>
+  <div class="posts-list">
+    <div class="blog-post-list">
+      <div class="image"></div>
+      <div class="container">
+        <div class="div">
+          <div class="badge"><div class="text-wrapper">취미</div></div>
+          <p class="title">5G 네트워크로 연결된 스마트 팩토리,생산성과 효율성 급증</p>
+        </div>
+        <div class="meta-info">
+          <div class="author">Andy Waruwu</div>
+          <div class="timestamp">2m ago</div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-post-list-2">
+      <div class="image"></div>
+      <div class="container">
+        <div class="div">
+          <div class="badge"><div class="text-wrapper">사회/정치</div></div>
+          <p class="title">양자 컴퓨팅의 상용화,문제 해결 속도 지수적으로 증가</p>
+        </div>
+        <div class="meta-info">
+          <div class="author">Bella Kim</div>
+          <div class="timestamp">1h ago</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="posts-container">
+  <div class="section-header">
+    <div class="frame"><div class="section-title">추천글</div></div>
+    <div class="action-button"><div class="parent-title">모두 보기</div></div>
+  </div>
+  <div class="posts-list">
+    <div class="blog-post-list">
+      <div class="image"></div>
+      <div class="container">
+        <div class="div">
+          <div class="badge"><div class="text-wrapper">취미</div></div>
+          <p class="title">5G 네트워크로 연결된 스마트 팩토리,생산성과 효율성 급증</p>
+        </div>
+        <div class="meta-info">
+          <div class="author">Andy Waruwu</div>
+          <div class="timestamp">2m ago</div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-post-list-2">
+      <div class="image"></div>
+      <div class="container">
+        <div class="div">
+          <div class="badge"><div class="text-wrapper">사회/정치</div></div>
+          <p class="title">양자 컴퓨팅의 상용화,문제 해결 속도 지수적으로 증가</p>
+        </div>
+        <div class="meta-info">
+          <div class="author">Bella Kim</div>
+          <div class="timestamp">1h ago</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div data-include="components/footer.html" data-include-when="both"></div>
+
+</div>
+
+</body>
+<script src="../engine/js/popup.js" data-spa-ignore></script>
+<script data-spa-ignore>
+  Popup.init();
+</script>
+<script data-spa-ignore>
+  console.log('home page script executed');
+
+  // alert('home page script executed');
+  
+  // fetch('./data/posts.json').then(r=>r.json()).then(list=>{
+  //   const ul = document.getElementById('post-list');
+  //   ul.innerHTML = list.map(p=>`<li><a href="#profile">${p.title}</a></li>`).join('');
+  // });
+
+</script>
+
+</html>

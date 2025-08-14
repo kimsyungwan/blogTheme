@@ -1,0 +1,80 @@
+{
+  "splashDelay": 100,
+  "splashForce": false,
+  "tabbar": { "autoHide": false, "hideThreshold": 14 },
+  "pullToRefresh": {
+    "threshold": 90,
+    "startSlop": 18,
+    "damping": 0.35,
+    "maxPull": 200
+  },
+  "theme": {
+    "primaryColor": "#4CAF50",
+    "font": "Pretendard, system-ui",
+    "isMobile": false
+  },
+  "defaultTab": "home",
+  "tabs": [
+    {
+      "id": "home",
+      "label": "홈",
+      "icon": "🏠",
+      "page": "home"
+    },
+    {
+      "id": "posts",
+      "label": "글목록",
+      "icon": "📝",
+      "page": "posts"
+    },
+    {
+      "id": "community",
+      "label": "커뮤니티",
+      "icon": "💬",
+      "page": "community"
+    },
+    {
+      "id": "profile",
+      "label": "마이",
+      "icon": "👤",
+      "page": "profile"
+    }
+  ],
+  "routes": [
+    {
+      "path": "home",
+      "file": "home.html",
+      "title": "블로그"
+    },
+    {
+      "path": "posts",
+      "file": "posts.html",
+      "title": "글목록"
+    },
+    {
+      "path": "profile",
+      "file": "profile.html",
+      "title": "마이페이지"
+    },
+    {
+      "path": "community",
+      "file": "community.html",
+      "title": "커뮤니티"
+    },
+    {
+      "path": "board/list",
+      "file": "board/list.html",
+      "title": "게시판 목록"
+    },
+    {
+      "path": "board/view",
+      "file": "board/view.html",
+      "title": "게시판 상세"
+    },
+    {
+      "path": "board/view2",
+      "file": "board/view2.html",
+      "title": "게시판 상세2"
+    }
+  ]
+}

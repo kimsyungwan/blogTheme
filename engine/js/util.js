@@ -1,0 +1,1 @@
+export function qs(e,t=document){return t.querySelector(e)}export function qsa(e,t=document){return[...t.querySelectorAll(e)]}export function loadHTML(e){return fetch(e).then(e=>e.text())}export function setVar(e,t){document.documentElement.style.setProperty(e,t)}
